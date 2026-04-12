@@ -67,7 +67,7 @@ export default function App() {
       <nav className={`fixed top-0 w-full ${darkMode ? "bg-zinc-900/80 border-zinc-800" : "bg-white/80 border-zinc-200"} backdrop-blur-sm border-b z-50`}>
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src={darkMode ? "https://github.com/SafetyArgument/safety-argument1/blob/main/Images/Logo_bw.jpg?raw=true" : "https://github.com/SafetyArgument/safety-argument1/blob/main/Images/Logo_wb.jpg?raw=true"} alt="Logo" className="w-8 h-8" />
+            <img src={darkMode ? "https://raw.githubusercontent.com/SafetyArgument/safety-argument1/refs/heads/main/Images/Logo_bw.jpg" : "https://raw.githubusercontent.com/SafetyArgument/safety-argument1/refs/heads/main/Images/Logo_wb.jpg"} alt="Logo" className="w-8 h-8" />
             <span className="text-lg font-bold tracking-tight">Safety Argument</span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
@@ -137,7 +137,7 @@ export default function App() {
       {/* Experience Section */}
       <section id="experience" className={`py-24 ${darkMode ? "bg-zinc-800" : "bg-zinc-50"}`}>
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-8 items-center">
-          <img src="https://github.com/SafetyArgument/safety-argument1/blob/main/Images/Andriy.jpg?raw=true" alt="Andriy" className="w-48 h-48 rounded-full object-cover border-4" style={{ borderColor: darkMode ? gold : "#059669" }} />
+          <img src="https://raw.githubusercontent.com/SafetyArgument/safety-argument1/refs/heads/main/Images/Andriy.jpg" alt="Andriy" className="w-48 h-48 rounded-full object-cover border-4" style={{ borderColor: darkMode ? gold : "#059669" }} />
           <div>
             <h2 className="text-3xl font-bold mb-4">Experience</h2>
             <div className={`border-l-4 pl-6 text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed`} style={{ borderColor: darkMode ? gold : "#059669" }}>
