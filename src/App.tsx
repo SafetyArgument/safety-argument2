@@ -10,6 +10,7 @@
 
 import { useState, useEffect, ReactNode } from "react";
 import { LegalContent } from './components/LegalContent';
+import { IndustrialBackground } from './components/IndustrialBackground';
 import { motion, AnimatePresence } from "motion/react";
 import { Mail, MapPin, Coffee, Sun, Moon, ChevronDown, Menu, X } from "lucide-react";
 
@@ -95,9 +96,10 @@ export default function App() {
           </div>
         )}
       </nav>
+      <IndustrialBackground />
 
       {/* Hero Section */}
-      <section id="home" className={`pt-32 pb-12 ${darkMode ? "bg-gradient-to-b from-zinc-900 to-black" : "bg-gradient-to-b from-zinc-50 to-white"}`}>
+      <section id="home" className={`pt-32 pb-12 ${darkMode ? "bg-gradient-to-b from-zinc-900/90 to-black/90" : "bg-gradient-to-b from-zinc-50/90 to-white/90"}`}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -134,7 +136,7 @@ export default function App() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className={`py-24 ${darkMode ? "bg-zinc-800" : "bg-zinc-50"}`}>
+      <section id="experience" className={`py-24 ${darkMode ? "bg-zinc-800/90" : "bg-zinc-50/90"}`}>
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-8 items-center">
           <img src="https://raw.githubusercontent.com/SafetyArgument/safety-argument1/refs/heads/main/Images/Andriy.jpg" alt="Andriy" className="w-48 h-48 rounded-full object-cover border-4" style={{ borderColor: darkMode ? gold : "#059669" }} />
           <div>
