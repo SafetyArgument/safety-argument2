@@ -80,7 +80,11 @@ export default function App() {
             <button onClick={toggleDarkMode} className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-800 transition">
               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <a href="https://risk.safetyargument.com.au" className={`hidden md:block px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} hover:opacity-90 transition`}>Risk Profiler Tool</a>
+            <a href="https://risk.safetyargument.com.au" className={`hidden md:block px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} hover:opacity-90 transition`}>Risk Profiler</a>
+            <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+            <a href="https://system.safetyargument.com.au" className={`hidden md:block px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} hover:opacity-90 transition`}>System Profiler</a>
             <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -92,7 +96,8 @@ export default function App() {
             <button onClick={() => {setActiveTab('terms'); setIsMobileMenuOpen(false); document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });}} className="text-sm font-medium text-left">Terms</button>
             <button onClick={() => {setActiveTab('privacy'); setIsMobileMenuOpen(false); document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });}} className="text-sm font-medium text-left">Privacy</button>
             <button onClick={() => {setActiveTab('disclaimer'); setIsMobileMenuOpen(false); document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });}} className="text-sm font-medium text-left">Disclaimer</button>
-            <a href="https://risk.safetyargument.com.au" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} text-center`}>Risk Profiler Tool</a>
+            <a href="https://risk.safetyargument.com.au" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} text-center`}>Risk Profiler</a>
+            <a href="https://system.safetyargument.com.au" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} text-center`}>System Profiler</a>
           </div>
         )}
       </nav>
