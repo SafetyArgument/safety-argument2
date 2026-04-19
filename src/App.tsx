@@ -83,11 +83,6 @@ export default function App() {
             <a href="https://risk.safetyargument.com.au" className={`hidden md:block px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} hover:opacity-90 transition`}>Risk Profiler</a>
             <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-            <a href="https://system.safetyargument.com.au" className={`hidden md:block px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} hover:opacity-90 transition`}>System Profiler</a>
-            <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
           </div>
         </div>
         {isMobileMenuOpen && (
@@ -97,8 +92,7 @@ export default function App() {
             <button onClick={() => {setActiveTab('privacy'); setIsMobileMenuOpen(false); document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });}} className="text-sm font-medium text-left">Privacy</button>
             <button onClick={() => {setActiveTab('disclaimer'); setIsMobileMenuOpen(false); document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });}} className="text-sm font-medium text-left">Disclaimer</button>
             <a href="https://risk.safetyargument.com.au" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} text-center`}>Risk Profiler</a>
-            <a href="https://system.safetyargument.com.au" onClick={() => setIsMobileMenuOpen(false)} className={`px-4 py-2 rounded-lg text-sm font-medium ${darkMode ? "bg-[#849443] text-white" : "bg-emerald-600 text-white"} text-center`}>System Profiler</a>
-          </div>
+           </div>
         )}
       </nav>
       <IndustrialBackground />
