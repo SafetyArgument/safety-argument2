@@ -11,7 +11,7 @@ export const LegalContent: React.FC<LegalContentProps> = ({ activeTab }) => {
     <div className="mt-6 p-6 border border-zinc-200 dark:border-zinc-800 rounded-lg text-xs text-zinc-600 dark:text-zinc-400 whitespace-pre-line leading-relaxed text-left">
       {activeTab === 'terms' && (
         <>
-          Last updated: October 09, 2022
+          Last updated: July 20, 2026
           Please read these terms and conditions carefully before using Our Service.
           <h3 className="text-sm font-bold mt-4 mb-2">Interpretation and Definitions</h3>
           <h4 className="font-bold mt-2 mb-1">Interpretation</h4>
@@ -20,8 +20,8 @@ export const LegalContent: React.FC<LegalContentProps> = ({ activeTab }) => {
           For the purposes of these Terms and Conditions:
           <ul className="list-disc pl-5">
             <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-            <li><strong>Country</strong> refers to: Victoria, Australia</li>
-            <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Safety Argument Pty Ltd of Suit 6, L24, 570 Bourke St., Melbourne, 3000, Victoria.</li>
+            <li><strong>Country</strong> refers to: South Australia, Australia</li>
+            <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Safety Argument Pty Ltd.</li>
             <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
             <li><strong>Service</strong> refers to the Website.</li>
             <li><strong>Terms and Conditions</strong> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</li>
@@ -107,11 +107,11 @@ export const LegalContent: React.FC<LegalContentProps> = ({ activeTab }) => {
       )}
       {activeTab === 'privacy' && (
         <>
-          Last updated: October 08, 2022
+          Last updated: July 20, 2026
           Privacy Policy of www.safetyargument.com.au
           This Application collects some Personal Data from its Users.
           <h4 className="font-bold mt-2 mb-1">Owner and Data Controller</h4>
-          Safety Argument Pty Ltd of Suite 6, L24, 570 Bourke St., Melbourne, 3000 , Victoria
+          Safety Argument Pty Ltd
           Owner contact andriy@safetyargument.com.au
           <h4 className="font-bold mt-2 mb-1">Types of Data collected</h4>
           Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Usage Data; Trackers.
@@ -211,7 +211,7 @@ export const LegalContent: React.FC<LegalContentProps> = ({ activeTab }) => {
       )}
       {activeTab === 'disclaimer' && (
         <>
-          Last updated: October 08, 2022
+          Last updated: July 20, 2026
           <h4 className="font-bold mt-2 mb-1">website disclaimer</h4>
           The information provided by Safety Argument Pty Ltd ('we', 'us', or 'our') on www.safetyargument.com.au (the 'Site') is for general informational purposes only. All information on the Site is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
           Under no circumstances shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.
