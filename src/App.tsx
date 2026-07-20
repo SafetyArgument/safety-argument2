@@ -158,14 +158,14 @@ export default function App() {
         <h2 className="text-3xl font-bold mb-8">Get in touch</h2>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8">
           As pigeon post is obsolete and drone delivery services are a mode of future ... Please, use all that's available to reach out. 
-          How about a coffee in Elwood or Melbourne CBD? We are keen to help!
+          How about a coffee in Adelaide? We are keen to help!
         </p>
         <div className="flex flex-col gap-4">
           <a href="mailto:andriy@safetyargument.com.au" className={`flex items-center gap-2 hover:underline`} style={{ color: darkMode ? gold : "#059669" }}>
             <Mail className="w-5 h-5" /> andriy@safetyargument.com.au
           </a>
           <div className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400">
-            <MapPin className="w-5 h-5" /> Suite 6, Level 24, 570 Bourke st, Melbourne, 3000, Victoria
+            <MapPin className="w-5 h-5" /> 20 Oaken Street, Mount Barker, 5251, South Australia
           </div>
           <div className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400">
             <Coffee className="w-5 h-5" /> Let's grab a coffee!
